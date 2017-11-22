@@ -1,5 +1,14 @@
-Git is a version control system.
-Git is free software.
+放弃工作区 unstage的改动。
+git checkout path/to/file/to/revert  # For a specific file
+git checkout -- .                    #For all unstaged files
+
+git diff 的不同
+git diff  ... your working copy and staging area:
+git diff --staged... staging area and the latest commit:
+git diff 4ac0a6733... your working copy and commit 4ac0a6733:
+git diff 4ac0a6733 HEAD... commit 4ac0a6733 and the latest commit:
+git diff 4ac0a6733 826793951... commit 4ac0a6733 and commit 826793951
+
 
 要关联一个远程库，使用命令
 git remote add origin git@server-name:path/repo-name.git
