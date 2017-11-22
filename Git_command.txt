@@ -31,3 +31,6 @@ git push origin master
 可以先用git remote -v查看远程库信息：
 git remote rm origin
 
+git config --global core.quotepath false  #中文路径支持
+
+
